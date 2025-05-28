@@ -30,12 +30,19 @@ body {
 }
 
 .logo {
-  width: 200px;  /* Set width for the logo */
-  height: 200px; /* Set height equal to width to maintain a circular shape */
-  border-radius: 50%; /* This makes the logo circular */
-  flex-shrink: 0; /* Prevent the logo from shrinking */
-  margin-left: 20px; /* Move logo 20px towards the right */
-  object-fit: cover; /* Ensure the logo content fits within the circular frame */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: 20px;
+  background-color: #40513B; /* Use a background color instead of an image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 

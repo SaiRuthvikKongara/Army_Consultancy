@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import { Link, useLocation } from 'react-router-dom'; // Import useLocation for tracking URL changes
-import Army_Logo from '../Images/video.gif';
 import Emblem from '../Images/Emblem.png';
 import azadi from '../Images/75.png';
 
@@ -27,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="outer">
-        <img className="logo" src={Army_Logo} alt="Army Logo" />
+        <div className="logo">ARMY</div>
         <div className="nav-links">
           <Link to="/">Home</Link>
           <a onClick={() => scrollToSection('about-us-section')}>About Us</a>
