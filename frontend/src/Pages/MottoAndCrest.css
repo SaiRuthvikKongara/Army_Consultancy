@@ -1,0 +1,102 @@
+/* Container for both sections */
+body{
+    background: linear-gradient(to bottom, #2b3c25, #55684b, #2b3c25);}
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: none; /* Explicitly remove any border */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: none; /* Removed the blue background */
+}
+
+/* Shared Box Styles */
+.box {
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+}
+
+.sanskrit-text{
+    text-align: center;
+}
+
+.box-content{
+    text-align: justify;
+}
+
+
+
+/* Motto Box Styles */
+.motto-box {
+    border: 3px solid white;
+    margin-bottom: 30px; /* Add spacing */
+    background: linear-gradient(to bottom, #3a5532, #437347, #3a5532);
+}
+
+/* Crest Box Styles */
+.crest-box {
+    border: 3px solid white;
+    margin-bottom: 30px; /* Add spacing */
+    background: linear-gradient(to bottom, #3a5532, #437347, #3a5532);
+}
+
+/* Titles */
+.box-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #d0d06d; /* Light Beige */
+  }
+  
+
+/* Subtitle for Motto */
+.box-subtitle {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* Content Text */
+.box-content {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Highlighted Verse Section */
+.box-verse {
+    margin-top: 20px;
+    background: rgba(255, 204, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+/* Sanskrit Text Style */
+.sanskrit-text {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* Crest Image */
+.crest-image {
+    width: 150px;
+    height: auto;
+    margin: 20px 0;
+    border: 2px solid rgb(238, 207, 34);
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 223, 0, 0.6); /* Equal shadow in all directions */
+}
+

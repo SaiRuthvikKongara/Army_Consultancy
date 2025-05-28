@@ -1,0 +1,130 @@
+
+.training-container body {
+  margin: 0;
+  
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.training-container h1 {
+  color: #2f4f4f;
+  margin-bottom: 20px;
+  font-size: 2rem;
+    margin-left:20px;
+
+}
+
+.training-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.training-container {
+  background: linear-gradient(140deg,  
+    #0a1a0e 0%,  
+    #0e2212 15%,  
+    #1b3925 30%,  
+    #20442c 50%,  
+    #1b3925 70%,  
+    #0e2212 85%,  
+    #0a1a0e 100%);
+  min-height: 100vh; /* Ensures it covers the full viewport */
+  width: 100%;
+  padding-left: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+
+.main-content h1 {
+  text-align: left;
+  margin-left:20px;
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  line-height: 2.2;
+  color: #bfbfbf;
+  margin-left:20px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the button horizontally */
+}
+
+.sidebar .dropbtn {
+  background-color: #8b1a1a;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 3px;
+  border-radius: 6px;
+  width: 100%; /* Adjust width as needed */
+  text-align: center; /* Center text inside the button */
+}
+
+.sidebar .dropbtn:hover {
+  background-color: #6e1414;
+}
+
+
+.training-container .sidebar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.sidebar h3 {
+  text-align: center;
+  margin: 0 0 15px;
+  font-size: 1.2rem;
+    margin-left:20px;
+    color: bfbfbf;
+
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;  
+}
+
+.sidebar li {
+  padding: 8px 10px;
+  background-color: #950c0c;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar li.active {
+  background-color: #761111;
+}
+
+.sidebar li:hover {
+  background-color: #d52525;
+}
+
+
+
+
+.training-container h2,h3,h4,h5,p,li,ul {
+  color: #bfbfbf; /* Slight hover effect */
+}

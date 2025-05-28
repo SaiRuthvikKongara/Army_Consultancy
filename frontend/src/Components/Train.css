@@ -1,0 +1,102 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Common Background Section */
+  .training-section {
+    background: url('https://source.unsplash.com/1600x900/?indian-army,defense') no-repeat center center/cover;
+    color: white;
+    min-height: 80vh;
+  }
+  
+  /* Content Section */
+  .content-section {
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #9dc08b;
+    margin-bottom: 15px;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+  
+  .cta-button {
+    background-color: #4b7238;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .cta-button:hover {
+    background-color: #275118;
+    transform: scale(1.1);
+  }
+  
+  /* Program Cards */
+  #programs h2 {
+    font-size: 2rem;
+    color: #9dc08b;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .program-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .program-card {
+    background: rgb(176, 252, 193);
+    color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(44, 43, 43, 0.3);
+    
+  }
+  
+  .program-card h3 {
+    font-size: 1.5rem;
+    color: #11a54c;
+  }
+  
+  .program-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .program-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+ 
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .program-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

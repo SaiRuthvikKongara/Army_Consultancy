@@ -1,0 +1,113 @@
+.honorary-commission-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background: 
+    linear-gradient(rgba(74, 94, 57, 0.2), rgba(127, 138, 106, 0.2)),  /* Semi-transparent white overlay */
+    url("../Images/Awards/shade.jpg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed;
+}
+
+.honorary-commission-content {
+  max-width: 900px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.07); /* Add a semi-transparent white background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Soft shadow for better visibility */
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #bcbcbc;
+  height: 90%;
+  overflow-y: auto;
+  margin-top: 30px;
+
+}
+
+.honorary-commission-content h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.honorary-commission-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.honorary-commission-content li {
+  margin: 10px 0;
+  font-size: 1.2rem; /* Increased font size for bullet points */
+  line-height: 1.8; /* Increased line height for better readability */
+  color: #bcbcbc;
+}
+
+
+/* Button Styling */
+.btnn {
+  background-color:rgba(156, 0, 0, 1);
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  /* Aligning button to the right */
+}
+
+.btnn:hover {
+  background-color: rgba(107, 13, 13, 1);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  position: absolute;
+  background: rgba(156, 0, 0, 1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 250px;
+  padding: 10px;
+  z-index: 10;
+  /* Position the dropdown menu to the right of the button */
+  left: 81%; 
+  top: 120px;
+}
+
+/* Dropdown Link Styling */
+.honorary-commission-container .dropdown-menu a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 3px;
+  text-align: left;
+ margin-bottom: 5px;
+}
+
+/* Remove bottom margin from last link to avoid extra spacing */
+.dropdown-menu a:last-child {
+  margin-bottom: 0;
+}
+
+
+.dropdown-menu a:hover {
+  background: rgba(107, 13, 13, 1);
+}
+
+.honorary-commission-container .btnn{
+  margin-left: 959px;
+  position: fixed;
+  margin-top:-93px;
+}

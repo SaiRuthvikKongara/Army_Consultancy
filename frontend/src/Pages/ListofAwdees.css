@@ -1,0 +1,218 @@
+.awardees-website .page-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  .awardees-website .main-content {
+    flex: 3;
+    overflow-y: auto;
+   
+  }
+  .awardees-website .main-content h1{
+    text-align: center;
+  }
+  .awardees-website .main-content{
+    background: rgba(255, 255, 255, 0.07);
+        box-shadow: none;
+  }
+  .awardees-website .main-content .main-image {
+    max-width: 640px !important;
+    max-height: 480px !important;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Sidebar */
+  .awardees-website .related-links {
+    flex: 1;
+    width: 400px;
+    max-height: 800px;
+    background-color: #830a0a;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+    align-self: flex-start;
+    position: sticky;
+    top: 205px;
+  }
+  
+  .awardees-website .related-links h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  
+  .awardees-website .related-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .awardees-website .related-links ul li {
+    margin: 10px 0;
+  }
+  
+  .awardees-website .related-links ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    padding: 15px 20px;
+    background-color: #b71c1c;
+    display: block;
+    border-radius: 5px;
+    text-align: left;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .awardees-website .related-links ul li a:hover {
+    background-color: #ff4d4d;
+    transform: translateY(-2px);
+  }
+  
+  .awardees-website body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+  .awardees-website {
+    background: 
+    linear-gradient(rgba(74, 94, 57, 0.2), rgba(127, 138, 106, 0.2)),  /* Semi-transparent white overlay */
+    url("../Images/Awards/shade.jpg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire screen */
+  width: 100vw;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents extra scrolling */
+  }
+  
+  /* If you want a semi-transparent overlay for readability */
+  .awardees-website::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+    z-index: -1;
+  }
+  /* Style for the header image */
+  .awardees-website .header-image {
+    width:1091px;    
+    height:568px;     
+    object-fit: cover;       
+    display: flex;          
+    margin-left: -20px;
+    margin-right: -25px;
+    opacity: 0.7;
+    /* margin-bottom: -70px; */
+    margin-top: 70px;  
+  }
+  
+
+.awardees-website .main-content table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.awardees-website .main-content table, 
+.awardees-website .main-content th, 
+.awardees-website .main-content td {
+    border: 1px solid #b71c1c; 
+    text-align: left; 
+    padding: 10px; 
+    color: #ffffff; 
+}
+.awardees-website .main-content th {
+    background-color: #b71c1c; 
+    font-weight: bold; 
+}
+.awardees-website .main-content tr:nth-child(even) {
+    background-color: rgba(183, 28, 28, 0.2); 
+}
+.awardees-website .main-content tr:hover {
+    background-color: rgba(183, 28, 28, 0.4); 
+}
+
+
+
+
+
+
+
+
+/* Button Styling */
+.awardees-website .btnn {
+  background-color:rgba(156, 0, 0, 1);
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  /* Aligning button to the right */
+}
+
+.awardees-website .btnn:hover {
+  background-color: rgba(107, 13, 13, 1);
+}
+
+/* Dropdown Menu Styling */
+.awardees-website .dropdown-menu {
+  position: absolute;
+  background: rgba(156, 0, 0, 1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 250px;
+  padding: 10px;
+  z-index: 10;
+  /* Position the dropdown menu to the right of the button */
+  left: 81%; 
+  top: 120px;
+}
+
+/* Dropdown Link Styling */
+.awardees-website .dropdown-menu a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 3px;
+  text-align: left;
+ margin-bottom: 5px;
+}
+
+/* Remove bottom margin from last link to avoid extra spacing */
+.dropdown-menu a:last-child {
+  margin-bottom: 0;
+}
+
+
+.dropdown-menu a:hover {
+  background: rgba(107, 13, 13, 1);
+}
+
+.awardees-website .btnn{
+  margin-left: 1283px;
+  position: fixed;
+  margin-top:-13px;
+}

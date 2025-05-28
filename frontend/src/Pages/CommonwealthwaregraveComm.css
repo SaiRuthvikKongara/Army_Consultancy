@@ -1,0 +1,113 @@
+.cwgc-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background: 
+    linear-gradient(rgba(74, 94, 57, 0.2), rgba(127, 138, 106, 0.2)),  /* Semi-transparent white overlay */
+    url("../Images/Awards/shade.jpg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire screen */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents extra scrolling */
+}
+
+.cwgc-content {
+    max-width: 900px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.07); 
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 70%;
+    text-align: justify;
+  
+}
+
+.cwgc-content h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.cwgc-content li {
+    font-size: 1.3rem; /* Increase font size for better readability */
+    line-height: 1.8;
+    margin: 15px 0; /* Add space between paragraphs */
+    color: #bcbcbc;
+    padding-right: 20px ;
+}
+
+.cwgc-content ul {
+    padding-left: 20px;
+}
+
+
+
+/* Button Styling */
+.btnn {
+    background-color:rgba(156, 0, 0, 1);
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* Aligning button to the right */
+  }
+  
+  .btnn:hover {
+    background-color: rgba(107, 13, 13, 1);
+  }
+  
+  /* Dropdown Menu Styling */
+  .dropdown-menu {
+    position: absolute;
+    background: rgba(156, 0, 0, 1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 250px;
+    padding: 10px;
+    z-index: 10;
+    /* Position the dropdown menu to the right of the button */
+    left: 81%; 
+    top: 120px;
+  }
+  
+  /* Dropdown Link Styling */
+  .cwgc-container .dropdown-menu a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 3px;
+    text-align: left;
+   margin-bottom: 5px;
+  }
+  
+  /* Remove bottom margin from last link to avoid extra spacing */
+  .dropdown-menu a:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  .dropdown-menu a:hover {
+    background: rgba(107, 13, 13, 1);
+  }
+  
+  .cwgc-container .btnn{
+    margin-left: 969px;
+    position: fixed;
+    margin-top:-78px;
+  }

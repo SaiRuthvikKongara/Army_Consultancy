@@ -1,0 +1,338 @@
+/* General styles for the container with background */
+.pict-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 110vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: backgroundSlide 50s infinite; /* Animation for background slideshow */
+  transition: background-image 2s ease-in-out; /* Smooth transition effect */
+}
+
+
+@keyframes backgroundSlide {
+  0% {
+    background-image: url('../Images/d5.jpg');
+  }
+  7.14% {
+    background-image: url('../Images/d5.jpg');
+  }
+  7.15% {
+    background-image: url('../Images/ind4.jpg');
+  }
+  14.28% {
+    background-image: url('../Images/ind4.jpg');
+  }
+  14.29% {
+    background-image: url('../Images/ind3.jpg');
+  }
+  21.42% {
+    background-image: url('../Images/ind3.jpg');
+  }
+  21.43% {
+    background-image: url('../Images/ind6.jpg');
+  }
+  28.56% {
+    background-image: url('../Images/ind6.jpg');
+  }
+  28.57% {
+    background-image: url('../Images/ind7.jpg');
+  }
+  35.70% {
+    background-image: url('../Images/ind7.jpg');
+  }
+  35.71% {
+    background-image: url('../Images/ind9.jpg');
+  }
+  42.84% {
+    background-image: url('../Images/ind9.jpg');
+  }
+  42.85% {
+    background-image: url('../Images/ind10.jpg');
+  }
+  50% {
+    background-image: url('../Images/ind10.jpg');
+  }
+  50.01% {
+    background-image: url('../Images/ind11.jpg');
+  }
+  57.14% {
+    background-image: url('../Images/ind11.jpg');
+  }
+  57.15% {
+    background-image: url('../Images/ind5.jpg');
+  }
+  64.28% {
+    background-image: url('../Images/ind5.jpg');
+  }
+  64.29% {
+    background-image: url('../Images/ind2.jpg');
+  }
+  71.42% {
+    background-image: url('../Images/ind2.jpg');
+  }
+  71.43% {
+    background-image: url('../Images/ind8.jpg');
+  }
+  78.56% {
+    background-image: url('../Images/ind8.jpg');
+  }
+  78.57% {
+    background-image: url('../Images/ind12.jpg');
+  }
+  85.70% {
+    background-image: url('../Images/ind12.jpg');
+  }
+  85.71% {
+    background-image: url('../Images/ind1.jpg');
+  }
+  92.84% {
+    background-image: url('../Images/ind1.jpg');
+  }
+  92.85% {
+    background-image: url('../Images/d5.jpg');
+  }
+  100% {
+    background-image: url('../Images/d5.jpg');
+  }
+}
+
+/* Image inside the container */
+
+
+/* Updates text with twinkle effect */
+.updates-text {
+  position: absolute;
+  top: 120px;
+  left: 1340px; /* Adjust the placement */
+  color: #f7f30b; /* Yellow color for the text */
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0px 12px;
+  border: 2px solid #f7f30b; /* Yellow border around the text */
+  border-radius: 50px; /* Optional: rounded corners */
+  animation: twinkle 0.6s infinite alternate;
+  background-color: rgba(15, 15, 15, 0.9); /* Dark background */
+
+}
+
+.login-btn {
+  position: absolute;
+  top: 70px;
+  left: 1340px; /* Adjust the placement */
+  color: #f7f30b; /* Yellow color for the text */
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+  padding: 2px 24px;
+  border: 2px solid #f7f30b; /* Yellow border around the text */
+  border-radius: 50px; /* Optional: rounded corners */
+  background-color: rgba(15, 15, 15, 0.9); /* Dark background */
+
+  /* Text glow */
+  text-shadow: 0 0 5px #f7f30b, 0 0 12px #f7f30b, 0 0 16px #f7f30b;
+
+  /* Twinkling animation */
+  animation: twinkle 0.4s infinite alternate;
+}
+.updates-text{
+  text-shadow: 0 0 5px #f7f30b, 0 0 12px #f7f30b, 0 0 16px #f7f30b;
+
+  /* Twinkling animation */
+  animation: twinkle 0.4s infinite alternate;
+}
+/* Keyframes for the twinkle effect */
+@keyframes twinkle {
+  0% {
+    text-shadow: 0 0 8px #f7f30b, 0 0 12px #f7f30b, 0 0 16px #f7f30b;
+  }
+  50% {
+    text-shadow: 0 0 10px #ffd700, 0 0 14px #ffd700, 0 0 20px #ffd700;
+  }
+  100% {
+    text-shadow: 0 0 8px #f7f30b, 0 0 12px #f7f30b, 0 0 16px #f7f30b;
+  }
+}
+
+.login-btn h6 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  background-color: #000000;
+  color: #ffea00;
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+/* Tagline Styling */
+.tagline {
+  position: absolute;
+  top: 25px;  /* Adjust top distance */
+  left: 50px;  /* Adjust right distance */
+  color: white;
+  font-size: 2.25rem;  /* Adjust font size */
+  font-family: 'Georgia', serif;  /* Stylish font */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Added spacing between letters */
+  z-index: 1;
+
+  /* Shadow effect for depth */
+  text-shadow: 
+    2px 2px 7px rgba(0, 0, 0, 0.5), /* Existing shadow */
+    2px 2px 2px black, /* Bottom-right outline */
+   -2px 2px 2px black, /* Bottom-left outline */
+    2px -2px 2px black, /* Top-right outline */
+   -2px -2px 2px black; /* Top-left outline */
+}
+
+
+
+/* Popup content styles */
+.pict-popup {
+  position: absolute;
+  top: 120px; /* Adjusted gap */
+  left: 1023px;
+  background-color: rgba(15, 15, 15, 0.9); /* Dark background */
+  padding: 20px;
+  border: 2px solid #f7f30b; /* Yellow border */
+  border-radius: 15px;
+  width: 420px;
+  height: 400px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  visibility: hidden; /* Initially hidden */
+  overflow: hidden;
+}
+
+/* Show popup on hover */
+.pict-container:hover .pict-popup {
+  visibility: visible;
+}
+
+/* Header inside the popup */
+.pict-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pict-title {
+  color: #f7f30b;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px #f7f30b;
+}
+
+.pict-view-all {
+  color: #f7f30b;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.pict-view-all:hover {
+  text-decoration: underline;
+}
+
+/* List styles inside the popup */
+.pict-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 300px; /* Fixed height for the list */
+  overflow-y: scroll; /* Enables vertical scrolling */
+  padding-right: 10px; /* Adds space for scrollbar */
+}
+
+/* Bullet icon with fixed size and consistent spacing */
+.pict-list li::before {
+  content: '';
+  display: inline-block;
+  background: url('../Images/bullet.png') no-repeat center center;
+  background-size: contain;
+  width: 50px; /* Adjust bullet size */
+  height: 38px; /* Adjust bullet size */
+  margin-right: 10px;
+  
+}
+
+/* List item styles */
+.pict-list li {
+  margin: 10px 0;
+  font-size: 0.8rem;
+  color: #f7f30b;
+  display: flex;
+  align-items: center;
+
+}
+
+/* Links inside list */
+.pict-list li a {
+  color: #f7f30b;
+  text-decoration: none;
+  text-align: justify; /* Aligns text to both the left and right edges */
+  display: block; /* Ensures the text spans the full width of the container */
+}
+
+
+.pict-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Custom Scrollbar Styles */
+.pict-list::-webkit-scrollbar {
+  width: 7px; /* Decreased width of the scrollbar */
+}
+
+.pict-list::-webkit-scrollbar-track {
+  background: #333; /* Dark track background */
+  border-radius: 5px; /* Rounded corners for the track */
+}
+
+.pict-list::-webkit-scrollbar-thumb {
+  background: #f7f30b; /* Yellow thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+  border: 2px solid #333; /* Dark border around the thumb */
+  height: 30px; /* Decreased height of the yellow line (thumb) */
+}
+
+.pict-list::-webkit-scrollbar-thumb:hover {
+  background: #f8f40e; /* Lighter yellow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pict-popup {
+    width: 90%;
+    left: 5%;
+  }
+  .updates-text {
+    font-size: 1.2rem;
+    top: 20px;
+    left: 20px;
+  }
+  .pict-title {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+

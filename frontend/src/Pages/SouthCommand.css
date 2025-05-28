@@ -1,0 +1,165 @@
+.south-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin-top: 0; 
+  position: relative;
+}
+.south-container {
+  background: linear-gradient(140deg,  
+    #0a1a0e 0%,  
+    #0e2212 15%,  
+    #1b3925 30%,  
+    #20442c 50%,  
+    #1b3925 70%,  
+    #0e2212 85%,  
+    #0a1a0e 100%);
+  min-height: 100vh;
+}
+
+
+
+
+.south-container .dropdown-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+}
+
+.south-container .dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 30; 
+}
+
+.south-container .dropbtn {
+  background-color: #ac1212;
+  color: white;
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.south-container .dropbtn:hover {
+  background-color: #750e0e;
+}
+
+.south-container .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 2px;
+  background-color: rgb(174, 23, 23);
+  min-width: 220px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 40; /* Ensures dropdown is above other elements */
+  border-radius: 5px;
+  text-align: left;
+}
+
+.south-container .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.south-container .dropdown-content button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: none;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.south-container .dropdown-content button:hover {
+  background-color: #f0f0f0;
+  color: rgb(174, 23, 23);
+}
+
+.south-container .image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.south-container .image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid #ccc;
+}
+
+.south-container .image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.south-container .army-commanders .image {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #000000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.south-container .army-commanders .image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.south-container .section {
+  margin: 15px;
+  padding: 15px;
+  text-align: left;
+  margin-top: 20px; 
+}
+
+.south-container .section h2 {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 29px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.south-container .section p {
+  margin-bottom: 16px;
+  font-size: 16.5px;
+  line-height: 2;
+  color: #bebebe;
+  text-align: justify;
+}
+
+.south-container .section img {
+  max-width: 100%;
+  height: auto;
+  margin: 15px auto;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+.south-container .section img {
+  width: 440px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid #ccc;
+}
+
+.south-container .image-grid .image:hover,
+.south-container .army-commanders .image:hover,
+.south-container .section img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}

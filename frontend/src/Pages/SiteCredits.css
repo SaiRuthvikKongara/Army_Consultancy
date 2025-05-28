@@ -1,0 +1,128 @@
+/* Container for the credits section */
+.credits-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+}
+
+/* Marquee Styling */
+.credits-container .marquee {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 0;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Make sure it stays on top */
+}
+
+/* Marquee content should scroll continuously */
+.credits-container .marquee-content {
+  display: inline-block;
+  animation: marquee-scroll 110s linear infinite;
+}
+
+.credits-container .marquee-content p {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 20px;
+  margin: 0; /* Ensure no margin that might cause delay */
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(100%); /* Start from right */
+  }
+  100% {
+    transform: translateX(-100%); /* End at left */
+  }
+}
+
+/* Credits Title */
+.credits-container .credits-title {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-top: 80px; /* Adjust to avoid overlap with marquee */
+  margin-bottom: 30px;
+}
+
+.credits-container .credits-subtitle {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.credits-container .credits-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.credits-container .credits-item {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.credits-container .credits-item strong {
+  color: #007bff;
+}
+
+.credits-container .credits-technology,
+.credits-thanks,
+.credits-footer {
+  margin-top: 30px;
+}
+
+.credits-container .credits-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.credits-container .credits-footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .credits-container {
+    padding: 20px;
+  }
+
+  .credits-title {
+    font-size: 30px;
+  }
+
+  .credits-subtitle {
+    font-size: 20px;
+  }
+
+  .credits-item {
+    font-size: 16px;
+  }
+
+  .credits-text {
+    font-size: 14px;
+  }
+
+  .marquee-content p {
+    font-size: 16px;
+  }
+}

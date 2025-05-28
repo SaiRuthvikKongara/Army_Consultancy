@@ -1,0 +1,187 @@
+
+.background-page {
+  background: 
+    linear-gradient(rgba(74, 94, 57, 0.2), rgba(127, 138, 106, 0.2)),  /* Semi-transparent white overlay */
+    url("../Images/Awards/shade.jpg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire screen */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents extra scrolling */
+
+}
+/* Background Image with Transparency */
+.background-page .background-content {
+  
+  z-index: 2; /* Content above pseudo-element */
+}
+
+.background-page .background-content::before {
+  content: ''; /* Creates an empty element */
+  position: absolute; /* Positions the pseudo-element relative to the parent */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    url("../Images/Awards/ashoka.png") no-repeat center center;
+  background-size: 350px; /* Adjust the size of the image */
+  background-repeat: no-repeat;
+   opacity: 0.15;
+   background-attachment: fixed;
+
+  background-position: center 80%; /* Moves the image 20% down from the top */
+  z-index: -1; /* Ensures the background image stays behind the content */
+}
+
+.background-page .background-content::after {
+  content: ''; /* Creates an empty element */
+  position: absolute; /* Positions the pseudo-element relative to the parent */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ 
+  z-index: -1; /* Makes sure the image is behind content */
+}
+
+
+/* Make the content fit the entire page */
+.background-page .background-content {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  box-shadow: none; /* Removing shadow for a seamless full-page look */
+  border-radius: 0; /* Ensuring no rounded corners */
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  color: #bcbcbc;
+  font-size: 1.2rem;
+  overflow-y: auto; /* Enables scrolling for overflow content */
+  
+}
+
+/* Heading Styling */
+.background-page .background-content h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.background-page .background-content h2,li {
+  color: #ffffff;
+}
+
+/* Scrollbar Styling */
+.background-page .background-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.background-page .background-content::-webkit-scrollbar-thumb {
+  background-color: #035d09;
+  border-radius: 10px;
+}
+
+.background-page .background-content::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Paragraph Styling */
+.background-page .background-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .background-page .background-content {
+    padding: 20px;
+  }
+
+  .background-page .background-content h1 {
+    font-size: 2rem;
+  }
+}
+
+
+
+/* Button Styling */
+
+.background-page .btnn{
+  margin-left: 1263px;
+  position: fixed;
+  margin-top: -100px;
+}
+.btnn {
+  background: rgba(156, 0, 0, 1);
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* Aligning button to the right */
+}
+
+.btnn:hover {
+  background: rgba(107, 13, 13, 1);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  position: absolute;
+  background: rgba(156, 0, 0, 1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 250px;
+  padding: 10px;
+  z-index: 10;
+  /* Position the dropdown menu to the right of the button */
+  left: 81%; 
+  top: 120px;
+}
+
+/* Dropdown Link Styling */
+.dropdown-menu a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(107, 13, 13, 1);
+}
+
+
+
+
+.background-page .home-button-container {
+  position: absolute;
+  top: 15px;
+  right: 42px;
+  z-index: 100; /* Ensures it stays on top of other elements */
+}
+
+.background-page .home-button {
+  font-size: 27px;
+  padding: 5px 10px;
+  background-color: none;
+  color: white;
+  border: none;
+  border-radius: 5;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.background-page .home-button:hover {
+  background-color: none;
+  transform: scale(1.1); /* Adds a slight zoom effect on hover */
+}

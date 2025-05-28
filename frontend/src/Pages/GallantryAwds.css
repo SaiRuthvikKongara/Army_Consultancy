@@ -1,0 +1,301 @@
+.gallantry-awards-page {
+    background: 
+    linear-gradient(rgba(74, 94, 57, 0.2), rgba(127, 138, 106, 0.2)),  /* Semi-transparent white overlay */
+    url("../Images/Awards/shade.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+/* Container for all awards */
+.awards-container {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width: 80%;
+    max-width: 1200px; /* Prevent stretching on large screens */
+    height: auto;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.07); /* Add a semi-transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Soft shadow for better visibility */
+    padding: 30px;
+}
+
+
+/* Scrollable content container */
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.awards-scrollable-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.awards-scrollable-content {
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+/* Grid container for awards */
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px; /* Space between awards */
+    justify-content: center; /* Center grid items */
+    align-items: center;
+    margin: 0 auto;
+    width: 100%; /* Ensure no horizontal overflow */
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0); /* White with 80% opacity */}
+
+/* Individual award cards with slanted corners */
+.award-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 220px; /* Fixed width */
+    height: 220px; /* Fixed height */
+    background-color: rgba(255, 255, 255, 0); /* Ensure visibility */
+    padding: 20px;
+    border-radius: 15px;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+}
+
+/* Ensuring images inside the award card scale properly */
+.award-card img {
+    width: 100%;
+    height: 150px; /* Ensure all images take the same space */
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+/* Award card hover effect */
+.award-card:hover {
+    border: 2px solid #bcbcbc; /* Changes border color to blue on hover */
+    transform: scale(1.05); /* Adds a slight zoom effect on hover */
+}
+
+/* Award image */
+
+.award-card img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Award text */
+.award-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #bcbcbc;
+}
+
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Modal content */
+.gallantry-awards-page .modal-content {
+    background: 
+    linear-gradient(rgba(74, 94, 57, 0.4), rgba(127, 138, 106, 0.4)), 
+    url("../Images/Awards/shade.jpg") no-repeat center center;
+ 
+    padding: 15px;
+    width: 60%;
+    max-width: 800px;
+    max-height: 90vh;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #bcbcbc;
+
+}
+
+/* Modal images layout */
+.gallantry-awards-page .modal-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+
+.gallantry-awards-page .modal-content img {
+    width: 270px; /* Decreased size */
+    height: 270px; /* Maintain aspect ratio */
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto; /* Center the image */
+}
+
+
+/* Modal text */
+.gallantry-awards-page .modal-content p {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #bcbcbc;
+}
+
+/* Close button */
+.gallantry-awards-page .modal-content button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    background-color: #042684;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gallantry-awards-page .modal-content button:hover {
+    background-color: #121a54;
+}
+
+/* Center the title */
+.awards-container h1 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 2rem; /* Adjust size as needed */
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 awards per row */
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .modal-content {
+        width: 80%; /* More space on small screens */
+    }
+
+    .modal-content img {
+        max-width: 100%;
+        max-height: 50vh;
+    }
+
+    .modal-content button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .awards-grid {
+        grid-template-columns: 1fr; /* 1 award per row */
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .modal-images img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .modal-content button {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+/* Button Styling */
+.btnn {
+    background-color:rgba(156, 0, 0, 1);
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* Aligning button to the right */
+  }
+  
+  .btnn:hover {
+    background-color: rgba(107, 13, 13, 1);
+  }
+  
+  /* Dropdown Menu Styling */
+  .dropdown-menu {
+    position: absolute;
+    background: rgba(156, 0, 0, 1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 250px;
+    padding: 10px;
+    z-index: 10;
+    /* Position the dropdown menu to the right of the button */
+    left: 81%; 
+    top: 120px;
+  }
+  
+  /* Dropdown Link Styling */
+  .gallantry-awards-page .dropdown-menu a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 3px;
+    text-align: left;
+   margin-bottom: 5px;
+}
+
+/* Remove bottom margin from last link to avoid extra spacing */
+.dropdown-menu a:last-child {
+    margin-bottom: 0;
+}
+
+  
+  .dropdown-menu a:hover {
+    background: rgba(107, 13, 13, 1);
+  }
+  
+  .gallantry-awards-page .btnn{
+    margin-left: 544px;
+    position: fixed;
+    margin-top:-122px;
+  }

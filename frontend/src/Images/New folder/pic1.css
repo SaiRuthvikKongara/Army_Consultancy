@@ -1,0 +1,59 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.army-gallery-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.army-gallery-header {
+  background-color: #00274d;
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.army-gallery-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Gallery Grid */
+.army-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.army-photo-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.army-photo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.army-photo-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.army-photo-title {
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #444;
+}

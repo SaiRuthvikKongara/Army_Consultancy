@@ -1,0 +1,88 @@
+/* Overall page container */
+.important-links-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.07); /* Add a semi-transparent white background */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+}
+
+.important-links-page .header {
+  margin-bottom: 40px;
+}
+
+.important-links-page h1 {
+  color: #ffffff; /* Dark green for the title */
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.important-links-page .subtitle {
+  font-size: 1.1rem;
+  color: #bcbcbc;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+/* Links list */
+.important-links-page .links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.important-links-page .link-item {
+  margin: 18px 0;
+}
+
+.important-links-page .link-item a {
+  font-size: 1.2rem;
+  color: #1ca8ff; /* Green color for text */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.important-links-page .link-item a:hover {
+  color: #0062ff; /* Darker green on hover */
+  text-decoration: underline; /* Add blue underline on hover */
+}
+
+.important-links-page .link-item a:active {
+  color: #003a2d; /* Even darker green when clicked */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .link-item a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .link-item a {
+    font-size: 0.9rem;
+  }
+}

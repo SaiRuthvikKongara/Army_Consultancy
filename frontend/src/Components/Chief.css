@@ -1,0 +1,156 @@
+/* Chief Card Container */
+.chief-card-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Adding the yellow line at the bottom of the image */
+.yellow-line {
+  width: 70%;
+  height: 0.1px;
+  background-color: #f7f30b;
+  position: absolute;
+  top: 0;
+  left: 15%;
+  box-shadow: 0 1px 10px rgba(255, 242, 0, 0.7);
+  z-index: 1000;
+}
+
+  
+  /* Chief Card */
+  .chief-card {
+    display: flex;
+    flex-direction: column; /* Adapted for smaller screens */
+    align-items: center;
+    max-width: 700px; /* Increased max-width for a spacious look */
+   /* background: #ffffff;
+    border-radius: 15px; /* Softer rounded corners */
+    padding: 20px;
+    /*box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for better elevation */
+    overflow: hidden;
+    font-family: "Arial", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  
+  /* Chief Image */
+  .chief-image {
+    width: 180px; /* Increased image size */
+    height: 180px;
+    object-fit: cover;
+    border: 4px solid #e0e0e0; /* Thicker border */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px; /* Adjusted spacing */
+  }
+  
+  /* Chief Content */
+  .chief-content {
+    text-align: center; /* Centered content for better alignment */
+    padding: 10px 20px;
+    flex: 1;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 24px; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #bdc842; /* Dark blue color for better contrast */
+  }
+  
+  /* Subtitle */
+  .subtitle {
+    font-size: 18px; /* Adjusted font size */
+    font-weight: normal;
+    color: #fbfafa; /* Softer gray color */
+    margin-bottom: 20px;
+  }
+  
+  /* Description */
+  .description {
+    font-size: 14px; /* Slightly larger for readability */
+    color: #ffffff;
+    line-height: 1.6; /* Increased line height for better readability */
+    margin-bottom: 20px;
+    text-align: justify; /* Justified text for a clean and professional look */
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Increased gap for better spacing */
+  }
+  
+  /* Buttons */
+  .button {
+    padding: 10px 20px; /* Larger buttons for better clickability */
+    font-size: 14px; /* Larger text for better readability */
+    background-color: white;
+    color: #9DC08B; /* Dark blue color */
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.512); /* Thicker border for a bolder look */
+    border-radius: 25px; /* Fully rounded buttons */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background: rgb(47, 36, 36); /* Solid dark blue on hover */
+    color: #d5d6d0;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .chief-card-container {
+      padding: 30px 10px; /* Adjusted padding for smaller screens */
+    }
+  
+    .chief-card {
+      flex-direction: column; /* Stack image and content vertically */
+      text-align: center;
+    }
+  
+    .chief-image {
+      margin-bottom: 20px;
+    }
+  
+    .chief-content {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 20px; /* Slightly smaller for small screens */
+    }
+  
+    .subtitle {
+      font-size: 16px;
+    }
+  
+    .description {
+      font-size: 12px; /* Adjusted for readability on smaller devices */
+      line-height: 1.5;
+    }
+  
+    .button {
+      padding: 8px 15px; /* Adjust button size */
+      font-size: 12px;
+    }
+  }
+  

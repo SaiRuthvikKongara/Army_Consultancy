@@ -1,0 +1,188 @@
+.award-container {
+    padding: 20px;
+    text-align: center; /* Center the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: auto; /* Allow scrolling */
+    background: 
+    linear-gradient(rgba(74, 94, 57, 0.2), rgba(127, 138, 106, 0.2)),  /* Semi-transparent white overlay */
+    url("../Images/Awards/shade.jpg") no-repeat center center;
+    background-size: cover; /* Make the background cover the entire container */
+    background-position: center center; /* Position the image in the center */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+}
+
+/* Title styling */
+.award-container h1 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 2rem; /* Adjust size as needed */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Paragraph styling */
+.award-container p {
+    margin: 10px 0;
+    font-size: 1rem;
+    text-decoration: none; /* Remove underline */
+    color: #bcbcbc;
+}
+
+/* Award images section */
+.award-images {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Title for award images */
+.award-images h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-decoration: none; /* Remove underline */
+    color: #ffffff;
+}
+
+/* Grid layout for the awards, 4 images per row */
+.award-images-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px; /* Space between the images */
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    margin-bottom: 50px;
+    margin-top: 90px;
+}
+
+/* Styling for each award image */
+.award-image {
+    text-align: center;
+}
+
+.award-image img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    
+}
+
+/* Hover effect for images */
+.award-image img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Award title styling */
+.award-image p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #bcbcbc;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Make sure the page is scrollable */
+.award-container {
+    overflow: auto;
+    max-height: 100vh; /* Ensure the page doesn't overflow */
+    flex-grow: 1; /* Allow it to grow and fill space */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .award-images-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .award-image img {
+        max-width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .award-images-grid {
+        grid-template-columns: 1fr; /* 1 item per row on very small screens */
+    }
+
+    .award-image img {
+        max-width: 100px;
+        height: 100px;
+    }
+}
+.award-container a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent element */
+}
+
+
+
+/* Button Styling */
+.btnn {
+    background-color:rgba(156, 0, 0, 1);
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* Aligning button to the right */
+  }
+  
+  .btnn:hover {
+    background-color: rgba(107, 13, 13, 1);
+  }
+  
+  /* Dropdown Menu Styling */
+  .dropdown-menu {
+    position: absolute;
+    background: rgba(156, 0, 0, 1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 250px;
+    padding: 10px;
+    z-index: 10;
+    /* Position the dropdown menu to the right of the button */
+    left: 81%; 
+    top: 120px;
+  }
+  
+  /* Dropdown Link Styling */
+  .award-container .dropdown-menu a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 3px;
+    text-align: left;
+   margin-bottom: 5px;
+}
+
+/* Remove bottom margin from last link to avoid extra spacing */
+.dropdown-menu a:last-child {
+    margin-bottom: 0;
+}
+
+  
+  .dropdown-menu a:hover {
+    background: rgba(107, 13, 13, 1);
+  }
+  
+  .award-container .btnn{
+    margin-left: 1270px;
+    position: fixed;
+    margin-top:47px;
+  }

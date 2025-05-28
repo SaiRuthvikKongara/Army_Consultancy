@@ -1,0 +1,77 @@
+.southern-command-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Full-screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Align content starting from the top */
+    color: #f1f1f1;  /* Light color for text */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);  /* Dark text shadow for visibility */
+    background-color: rgba(59, 78, 19, 0.85);  /* Deep Olive Green */
+}
+
+.header {
+    font-size: 2em;
+    margin-top: 20px;  /* Space from the top of the page */
+    margin-bottom: 30px;  /* Space below the header */
+}
+
+.content {
+    position: relative; /* Establishes a stacking context */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('');
+    background-size: contain; /* Ensures the whole image is visible without clipping */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-attachment: scroll; /* Allows the background image to scroll with the content */
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto; /* Ensures content is scrollable */
+    font-size: 1.5em; /* Adjust the font size here */
+    font-family: 'Oswald', sans-serif;  /* Bold, strong for headings */
+}
+
+.content-section {
+    margin-bottom: 30px;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent footer */
+    padding: 10px;
+    width: 100%;
+    font-size: 0.9em;
+    color: #f1f1f1;
+}
+.corps-image {
+    max-width: 10%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+    .organisation h2 {
+        text-align: left;
+        margin-left: 0; /* Optional for some padding from the left */
+    }
+    
+    .organisation p {
+        text-align: left;
+        margin-left: 0;
+    }
+    
+    .organisation img {
+        display: block;
+        margin-left: 0; /* Ensures images are also aligned left */
+    }
+    section {
+        text-align: justify;
+        line-height: 1.6;
+    }
+    
+    section p {
+        margin-bottom: 8px;
+    }
+    

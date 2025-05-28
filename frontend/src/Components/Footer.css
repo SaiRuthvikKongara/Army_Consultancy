@@ -1,0 +1,76 @@
+.footer {
+  background: linear-gradient(to bottom, #163a19, #284e2b, #163a19);
+  padding: 1rem 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem; /* Add margin below icons */
+}
+
+.social-icon {
+  width: 30px; /* Set icon size */
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Scale icons on hover */
+}
+
+.footer .tags {
+  display: flex;
+  justify-content: center; /* Center-align links */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 1rem; /* Add spacing between links */
+}
+
+.footer .tags a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem; /* Add padding for better click area */
+  border-radius: 20px; /* Slightly rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer .tags a:hover {
+  background-color: white; /* White background on hover */
+  color: #9DC08B;
+}
+
+.footer p {
+  margin-top: 0.5rem; /* Reduced margin between lines */
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.footer-info {
+  margin-top: 0.5rem; /* Reduced space between lines */
+  font-size: 0.9rem;
+}
+
+.footer p:last-child {
+  font-weight: bold;
+}
+
+.footer .visitor-number {
+  margin-left: 10px; /* Space between the two pieces of text */
+  font-weight: normal; /* Normal font weight for visitor number */
+}
+
+@media screen and (max-width: 768px) {
+  .footer .tags {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    align-items: center;
+  }
+
+  .social-media-icons {
+    margin-bottom: 0.5rem; /* Reduce space below icons on smaller screens */
+  }
+}

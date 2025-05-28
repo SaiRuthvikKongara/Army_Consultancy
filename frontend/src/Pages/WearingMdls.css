@@ -1,0 +1,189 @@
+/* General Styling */
+.wearing-medals {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+  background: 
+    linear-gradient(rgba(74, 94, 57, 0.2), rgba(127, 138, 106, 0.2)),  /* Semi-transparent white overlay */
+    url('../Images/Awards/shade.jpg') no-repeat center center;
+  background-size: cover;
+  color: #333;
+  
+  overflow: hidden; /* Prevents body overflow */
+  display: flex;
+ 
+}
+
+/* Content container */
+.wearing-medals {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Scrollable if content overflows */
+  /* background: #fff; */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 40px; /* Padding inside the container */
+  overflow: auto; /* Ensures content scrolls within viewport */
+}
+
+/* Header */
+.wearing-medals h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* Section Headers */
+.wearing-medals h2 {
+  font-size: 22px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 10px 0 5px; /* Reduced margin between sections */
+  padding: 10px;
+  background: linear-gradient(to left, #ba1b1b, #670505);
+  width: 100%;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px #333;
+  transition: all 0.3s ease;
+}
+
+.wearing-medals h2:hover {
+  background: linear-gradient(to left, #550a0a, #670707);
+  transform: scale(1.02);
+}
+
+/* Medal List */
+.wearing-medals .wearing-medals__medals-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+}
+
+.wearing-medals .wearing-medals__medals-list li {
+  margin: 8px 0;
+  padding: 8px 16px; 
+  background: rgba(255, 255, 255, 0.07); 
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  
+}
+.wearing-medals .claps p
+{
+  margin: 8px 0;
+  padding: 8px 16px; 
+  background: rgba(255, 255, 255, 0.07); 
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  transition: all 0.2s ease-in-out; 
+}
+.wearing-medals .claps p:hover {
+  background: rgba(255, 255, 255, 0.25); 
+}
+.wearing-medals .wearing-medals__medals-list li:hover {
+  background: rgba(255, 255, 255, 0.25); 
+}
+
+/* Paragraphs */
+.wearing-medals p {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Nested List */
+.wearing-medals ul li ul {
+  margin-left: 20px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0); 
+  padding: 10px;
+  border-radius: 4px;
+  
+}
+
+.wearing-medals ul li ul li {
+  padding-left: 10px;
+  margin: 5px 0;
+  
+}
+
+/* Transitions */
+.wearing-medals {
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+/* Button Styling */
+.btnn {
+  background-color:rgba(156, 0, 0, 1);
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  /* Aligning button to the right */
+}
+
+.btnn:hover {
+  background-color: rgba(107, 13, 13, 1);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  position: absolute;
+  background: rgba(156, 0, 0, 1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 250px;
+  padding: 10px;
+  z-index: 10;
+  /* Position the dropdown menu to the right of the button */
+  left: 81%; 
+  top: 120px;
+}
+
+/* Dropdown Link Styling */
+.wearing-medals .dropdown-menu a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 3px;
+  text-align: left;
+ margin-bottom: 5px;
+}
+
+/* Remove bottom margin from last link to avoid extra spacing */
+.dropdown-menu a:last-child {
+  margin-bottom: 0;
+}
+
+
+.dropdown-menu a:hover {
+  background: rgba(107, 13, 13, 1);
+}
+
+.wearing-medals .btnn{
+  margin-left: 1263px;
+  position: fixed;
+  margin-top:26.6px;
+}

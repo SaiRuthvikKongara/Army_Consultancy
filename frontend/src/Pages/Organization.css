@@ -1,0 +1,119 @@
+.army-org-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #2b3c25, #55684b, #2b3c25);
+  color: #ffffff; /* White text for contrast */
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff; /* Bright Green for section titles */
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #000000, -2px -2px 2px #000000, 2px -2px 2px #000000, -2px 2px 2px #000000; /* Black outline */
+
+}
+
+.army-org-section {
+  background-color: #55684b; /* Slightly lighter dark green for sections */
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.army-org-section h2 {
+  text-align: center;
+  color: #ffffff; /* Bright Green for section titles */
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #000000, -2px -2px 2px #000000, 2px -2px 2px #000000, -2px 2px 2px #000000; /* Black outline */
+}
+
+
+.army-org-section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: justify;
+  color: #ffffff; /* White text for readability */
+}
+
+.army-org-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1.1em;
+  color: #ffffff; /* White text for list items */
+}
+
+.rank-structure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.rank-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centering content */
+  background-color: rgba(1, 84, 33, 0.5); /* 80% opacity */
+ /* Another shade of green for rank items */
+  border: 1px solid #33ff00; /* Bright green border */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.rank-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rank-container {
+  display: flex;
+  justify-content: center;  /* Center the image horizontally */
+  align-items: center;  /* Center the image vertically */
+  width: 100%;  /* Full width */
+  height: 100%;  /* Full height */
+  padding: 10px;
+  border: 2px solid #00ff00; /* Green border around the box */
+  border-radius: 10px;
+  background-color: #035c3a;  /* Slightly darker green background */
+}
+
+.rank-image {
+  max-width: 100%;  /* Make sure the image takes up available width */
+  max-height: 100%;  /* Ensure the image does not overflow vertically */
+  object-fit: contain;  /* Ensure the entire image is visible without clipping */
+  display: block;
+  margin: 0 auto;  /* Center the image horizontally */
+}
+
+.rank-name {
+  font-size: 1rem;
+  color: #ffffff; /* White text for rank names */
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word; /* Ensures words break properly */
+  line-height: 1.2;
+}
+
+.rank-description {
+  font-size: 0.9rem;
+  color: #cccccc; /* Light gray for descriptions */
+  flex: 1;
+  margin-left: 10px;
+}
+
+.army-org-section ul li {
+  margin-bottom: 5px;
+}
+
+.army-org-section ul li::marker {
+  color: #00ff00; /* Bright green markers */
+}
+
+
+
+

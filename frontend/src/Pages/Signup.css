@@ -1,0 +1,110 @@
+.signupPage {
+  min-height: 100vh;
+  background-image: url('../Images/loginpic.jpg'); /* Add the path to your image */
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  background-position: center; /* Centers the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px; /* Add padding to create spacing between the form and the edges */
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(72, 72, 72, 0.3); 
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 20px auto; /* Additional margin to create vertical spacing */
+  width: 100%; /* Ensure responsiveness */
+ 
+}
+
+  fieldset {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    
+  }
+  
+  legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+   
+  }
+  
+  
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+  }
+  
+  .input-group .input-field {
+    flex: 1;
+    
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .input-field label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    
+  }
+  
+  .input-field input {
+    padding: 8px;
+    border: none;
+    box-shadow: 2px 4px 4px rgba(38, 34, 34, 0.5);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #860303;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #690505;
+  }
+ 
+.input-field label {
+  color: rgb(255, 255, 255); /* Set label color to black */
+  font-weight: bold; /* Optional: makes the labels bold for better visibility */
+  font-size: 14px; /* Optional: adjust font size if needed */
+}
+
+/* You can also style the inputs or other fields as per your need */
+.input-field input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333; /* Adjust input text color */
+  box-sizing: border-box;
+}
+
+.input-field input:focus {
+  outline: none;
+  border-color: #2e3b47;
+}
+
+

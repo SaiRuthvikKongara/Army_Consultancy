@@ -1,0 +1,114 @@
+
+
+.homepage-header {
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex; /* Use flexbox to align the logo and text */
+    align-items: center; /* Vertically align the content */
+    background: #022902; /* Dark Green background */
+}
+
+.indian-army-title {
+    font-family: 'Righteous', serif; /* Applying Georgia font */
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto; /* Prevents unwanted external scrolling */
+    scroll-behavior: smooth;
+  }
+  
+  .homepage-container {
+    min-height: 100vh; /* Ensures full-page height */
+    overflow-y: auto;  /* Avoids external scroll affecting other pages */
+  }
+  
+  .main-wrapper {
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #628054;
+  }
+  
+
+.logo {
+    width: 50px !important; /* Make logo as small as possible */
+    height: 50px !important; /* Make logo as small as possible */
+    margin-left: 20px; /* Space between the logo and the text */
+    margin-right: 10px;
+}
+
+.saffron {
+    color: #FF9933; /* Saffron color */
+}
+
+.green {
+    color: #138808; /* Green color */
+}
+
+.indian-army-title:hover {
+    
+    color: #939c8a; /* Dark gold color on hover */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .homepage-header {
+        padding: 15px; /* Adjust padding on smaller screens */
+    }
+
+    .indian-army-title {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .indian-army-title {
+        font-size: 1.2rem; /* Further reduce font size on very small screens */
+    }
+}
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+    width: 10px; /* Thin width for vertical scrollbars */
+    height: 8px; /* Thin height for horizontal scrollbars */
+}
+::-webkit-scrollbar-track {
+    background: #1b1d1b; /* Light background for scrollbar track */
+    border-radius: 10px;
+}
+  ::-webkit-scrollbar-thumb {
+    background: #064a12; /* Yellow color for the scrollbar thumb */
+   
+    border-radius: 10px; /* Rounded corners */
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #106f22; /* Slightly darker yellow on hover */
+    
+}

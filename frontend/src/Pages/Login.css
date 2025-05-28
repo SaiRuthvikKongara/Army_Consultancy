@@ -1,0 +1,153 @@
+/* Scoped styles for Login Page */
+.login-page {
+  background-image: url('../Images/loginpic.jpg'); /* Replace with the actual path to your image */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  min-height: 100vh; /* Ensures the background covers the full viewport height */
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+}
+
+.login-page .login-container {
+  width: 400px;
+  margin:40px auto;
+  padding: 40px;
+  border: none; /* Remove the border */
+  border-radius: 10px; /* Same border-radius as .login-form */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgba(72, 72, 72, 0.3); 
+}
+
+.login-page .login-form {
+  background-color: rgba(255, 255, 255, 0); /* Same background as .login-container */
+  border-radius: 10px;
+  border: none; /* No border */
+  margin-top: 0px;
+ 
+}
+
+.login-page .login-container h2 {
+  text-align: center;
+  margin-top: -10px;
+  color: #000000;
+  font-size: 25px;
+}
+
+.login-page .login-container .input-field {
+  margin-bottom: 15px;
+}
+
+.login-page .login-container label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.login-page .login-container input[type="text"],
+.login-page .login-container input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  
+  /* Remove the border and add box shadow */
+  border: none;
+  box-shadow: 2px 4px 4px rgba(38, 34, 34, 0.5); /* Light shadow around the input */
+
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+
+.login-page .login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #860303;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-page .login-container button:hover {
+  background-color: #690505;
+}
+
+.login-page .login-container .captcha-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page .login-container .captcha-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.login-page .login-container canvas {
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.login-page .captcha-wrapper {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+.login-page .captcha-canvas {
+  display: block;
+  border: none !important; /* Forcefully remove any border */
+  outline: none !important; /* Forcefully remove any outline */
+  background-color: white; /* Set background to white */
+  box-shadow: none; /* Remove any shadow */
+  border-radius: 9px;
+}
+
+.login-page .login-container .circle-refresh-btn {
+  position: absolute;
+  top:1px;
+  right: 4px;
+  background-color: #be0404;
+  color: white;
+  font-size: 18px; /* Adjust font size for better fit */
+  border: none;
+  border-radius: 35%;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  display: flex; /* Center the content */
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  padding: 0; /* Remove extra padding */
+}
+
+.login-page .login-container .circle-refresh-btn:hover {
+  background-color: #970707;
+}
+
+.login-page .login-container .error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-page .login-container .signup-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-page .login-container .signup-container button {
+  background-color: #860303;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.login-page .login-container .signup-container button:hover {
+  background-color: #690505;
+}

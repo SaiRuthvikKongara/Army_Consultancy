@@ -1,0 +1,156 @@
+/* Main Container */
+.aboutus-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Title Container */
+.aboutus-title-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Title */
+.aboutus-title {
+  color: #ffffff;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+/* Gallery Grid */
+.aboutus-gallery-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Gallery Items */
+.aboutus-gallery-item {
+  position: relative;
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  cursor: default;
+}
+
+.aboutus-gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Styling */
+.aboutus-gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover: Enlarge the image */
+.aboutus-gallery-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Overlay for Hover Effect */
+.aboutus-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Transparent by default */
+  transition: background-color 0.4s ease-in-out; /* Smooth transition */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center text vertically and horizontally */
+  opacity: 0; /* Hidden by default */
+}
+
+/* Display overlay on hover */
+.aboutus-gallery-item:hover .aboutus-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Black with opacity on hover */
+  opacity: 1; /* Make it visible */
+}
+
+/* Text Styling */
+.aboutus-overlay-text {
+  color: #ffffff; /* Text color */
+  font-size: 1.8rem; /* Increased text size */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Capitalize text */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Add a shadow for visibility */
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out; /* Smooth animation */
+  text-align: center; /* Center the text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Set the cursor to pointer when hovering over the text */
+}
+
+/* Hyperlink Effect */
+.aboutus-overlay-text a {
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-size: inherit; /* Inherit parent font size */
+  font-weight: inherit; /* Inherit parent font weight */
+  transition: color 0.3s ease-in-out;
+}
+
+.aboutus-overlay-text a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+/* Hover Effect for Text */
+.aboutus-gallery-item:hover .aboutus-overlay-text {
+  transform: scale(1.1); /* Slightly enlarge text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .aboutus-title {
+    font-size: 2.5rem;
+  }
+
+  .aboutus-gallery-item {
+    width: 300px; /* Adjust size for tablets */
+    height: 300px;
+  }
+
+  .aboutus-overlay-text {
+    font-size: 1.4rem; /* Adjust text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutus-title {
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  .aboutus-gallery-item {
+    width: 200px; /* Adjust size for small screens */
+    height: 200px;
+  }
+
+  .aboutus-overlay-text {
+    font-size: 1rem;
+  }
+}
