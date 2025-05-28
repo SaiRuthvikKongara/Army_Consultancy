@@ -2,14 +2,6 @@
 
 This repository contains media files for the Army project, including videos, images, and other large binary files.
 
-## Structure
-
-```
-frontend/
-  └── src/
-      └── Images/
-          └── New folder/
-              └── InShot_20241225_201241767.mp4
 ```
 
 ## Usage
